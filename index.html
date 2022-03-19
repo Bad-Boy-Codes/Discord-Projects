@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<hhead>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn.badboy.is-a.dev/img/profile.jpg">
+  <title>☄️・Webhook Client</title>
+  <link rel="stylesheet" href="https://cdn.badboy.is-a.dev/css/style.css">
+  <meta name="theme-color" content="#fc0352" />
+  <meta property="og:title" content="Manage Webhook" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://badboy.is-a.dev" />
+  <meta property="og:site_name" content="Bad Boy" />
+  <meta property="author" content="Bad Boy" />
+  <meta property="og:image" content="https://cdn.badboy.is-a.dev/img/home.gif" />
+  <meta property="og:description" content="Manage ypur discord webhooks online! send messages via GUI.">
+  <meta name="google-site-verification" content="IftyuC9QK5vY5b0uHfAsiVu4udQmsBD5_Dmexy33sFI" />
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header>
+    <nav>
+      <div class="header_logo">
+        <img src="https://cdn.badboy.is-a.dev/img/home.gif" alt="i_pfp">
+      </div>
+      <div class="header_links">
+        <ul class="nav_links">
+          <li class="nav_link"><a href="https://badboy.is-a.dev/home">Home</a><a href="https://badboy.is-a.dev/projects">Projects</a><a href="https://badboy.is-a.dev/api">API</a><a href="https://badboy.is-a.dev/discord/home">Discord</a><a href="https://mail.badboy.is-a.dev/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="webhook_input" class="heading">
+    <div class="enter_webhook">
+      <span>Webhook Client</span>
+      <p>
+        Enter your Webhook URL
+      </p>
+      <div class="content">
+        <input type="text" name="webhook" id="wh" placeholder="https://discord.com/api/webhooks/...">
+        <button onclick="Login()">Login!</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="hide" id="webhook_login">
+    <section class="chat">
+      <div class="content">
+        <div class="top">
+          <span>Messages Manager</span>
+        </div>
+        <div class="chat_content">
+          <div id="messages" class="messages">
+
+          </div>
+          <div class="textarea">
+            <div class="area-content">
+              <input id="message_to_send" type="text" placeholder="Enter Message...">
+              <button onclick="send_Message()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="manager">
+      <div class="actual">
+        <img id="webhook_avatar" src="assets/img/null_pfp.jpg" alt="">
+        <div class="webhook_infos">
+          <span id="webhook_name"></span>
+          <label>ID:</label>
+          <p id="webhook_id"></p>
+          <label>TOKEN:</label>
+          <p id="webhook_token"></p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer-distributed">
+    <span class="footer__logo">Bad Boy</span>
+    <div class="footer-right">
+      <a href="/instagram"><i class="fab fa-instagram"></i></a><a href="/discord"><i class="fab fa-discord"></i></a><a href="/youtube"><i class="fab fa-youtube"></i></a><a href="/github"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="footer-left">
+      <p class="footer-links">
+        <a href="/home">Home</a>
+        <a href="/api">API</a>
+        <a href="/projects">Projects</a> <a href="https://mail.badboy.is-a.dev/">Contact</a>
+      </p>
+      <p>
+        &copy; 2022 Bad Boy. All rights reserved.  Made with <span class="heart">♥</span> by Bad Boy.
+      </p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.badboy.is-a.dev/js/particles.js"></script>
+</body>
+</html>
